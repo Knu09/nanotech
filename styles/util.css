@@ -1,0 +1,129 @@
+:root {
+    --clr-primary-cyan: #00FFF8;
+    --clr-primary-white: #FFFFFF;
+    --clr-primary-dark-blue: #05003F;
+    --clr-primary-grey: #BCBECD;
+
+    --clr-secondary-black: #000000;
+    --clr-secondary-light-grey: #F9FAFC;
+    --clr-secondary-ultra-light-grey: #DCE1E5;
+    --clr-secondary-blue: #0294E0;
+    --clr-secondary-grey: #979797;
+}
+
+.button {
+    width: 160px;
+    padding: 20px 28px;
+    gap: 4.75px;
+    margin: 0 20px;
+    outline: none;
+    border: none;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    border-radius: 40px;
+    background: linear-gradient(270deg, #00FFF8 -4.4%, #0294E0 103.89%);
+}
+
+.button:hover {
+    background: linear-gradient(270deg, rgba(0, 255, 248, .75) -4.4%, rgba(2, 148, 224, .75) 103.89%);
+}
+
+
+.link-button {
+    font-size: 12px;
+    color: var(--clr-primary-white);
+    text-decoration: none;
+    font-weight: 400;
+    padding-left: 0;
+    font-style: normal;
+    letter-spacing: 1px;
+    transition: .3s;
+    position: relative;
+}
+
+.link-button:hover {
+    color: var(--clr-primary-white);
+}
+
+.link-button:active {
+    color: var(--clr-primary-cyan)
+}
+
+.link-button::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--clr-secondary-blue), var(--clr-primary-cyan));
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.link-button:hover::after {
+    width: 100%;
+}
+
+.secondary-btn {
+
+}
+
+.secondary-btn {
+    width: 180px;
+    height: 50px;
+}
+
+.navbar-subpages .stroke-button {
+    position: absolute;
+    margin: 0;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 60px;
+    text-align: center;
+}
+
+.navbar-subpages a svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+
+.navbar-subpages a svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 90%;
+    fill: transparent;
+}
+
+.navbar-subpages a svg rect {
+    stroke: url(#gradient);
+    stroke-width: 2.5;
+    stroke-dasharray:  560, 560;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.8s ease-in-out;
+}
+
+.navbar-subpages a:hover svg rect {
+    stroke-dasharray: 400 , 250;
+    stroke-dashoffset: 1080;
+}
+
+.navbar-subpages a svg text {
+    stroke-dasharray: 500, 500;
+
+}
