@@ -30,6 +30,12 @@
     }
 }
 
+/*
+====================================================
+    PROJECT SECTION
+=====================================================
+*/
+
 .project {
     margin: 90px 0;
 }
@@ -68,6 +74,12 @@
 .feature-button {
     margin: 20px 0 0;
 }
+
+/*
+====================================================
+    CREW AND PLAN WRAPPER
+=====================================================
+*/
 
 .crew-section .container {
     padding: 70px 0;
@@ -119,6 +131,12 @@
     }
 }
 
+/*
+====================================================
+    CREW WRAPPER
+=====================================================
+*/
+
 .crew-wrapper {
     margin: 4em 1.5em 0 1.5em;
     transition: .3s;
@@ -139,28 +157,11 @@
 
 .wrapper-content a {
     text-decoration: none;
-}
-
-.plan-wrapper {
-    margin: 0 1.5em;
-    transition: .3s;
-    padding: 60px 35px;
-}
-
-.plan-wrapper:hover {
-    background: var(--clr-primary-white);
-}
-
-.plan-description button {
-    width: 180px;
-    margin: 20px 0 0;
-}
-
-.crew-wrapper img {
-    position: absolute;
-    border: 3px solid transparent;
-    background: linear-gradient(to left, var(--clr-primary-cyan), var(--clr-secondary-blue)) border-box;
-}
+}.crew-wrapper img {
+     position: absolute;
+     border: 3px solid transparent;
+     background: linear-gradient(to left, var(--clr-primary-cyan), var(--clr-secondary-blue)) border-box;
+ }
 
 .crew-description {
     height: 100%;
@@ -204,3 +205,77 @@
     top:115px;
 }
 
+/*
+====================================================
+    PLAN WRAPPER
+=====================================================
+*/
+
+.plan-wrapper {
+    margin: 0 1.5em;
+    transition: .3s;
+    padding: 60px 35px;
+}
+
+.plan-wrapper:hover {
+    background: var(--clr-primary-white);
+}
+
+.plan-description button {
+    width: 180px;
+    margin: 20px 0 0;
+}
+
+/*
+====================================================
+    CONTACT FOOTER
+=====================================================
+*/
+
+.contact-section {
+    padding: 60px 10px;
+}
+
+.get-in-touch {
+    display: flex;
+}
+
+.elsewhere-col {
+    padding-right: 60px;
+}
+
+.title {
+    color: #00FFF8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.elsewhere-wrapper div {
+    margin: 20px 0;
+}
+
+.link {
+    color: #DCE1E5;
+    font-family: "PP Supply Mono", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.contact-wrapper2 {
+    padding: 40px 0;
+}
+
+.contact-wrapper3 {
+    display: flex;
+    justify-content: right;
+}
+
+@media (max-width: 992px) {
+    .contact-wrapper3 {
+        display: block;
+    }
+}
