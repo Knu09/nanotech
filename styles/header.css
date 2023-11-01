@@ -97,6 +97,7 @@
     }
 
     .navbar-subpages {
+        z-index: 100;
         position: fixed;
         right: 5%;
         top: 70px;
@@ -147,9 +148,13 @@
 =====================================================
 */
 
+
 .subpages-nav {
+    z-index: 200;
+    position: fixed;
     margin:0;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255,255,255,.2);
 }
 

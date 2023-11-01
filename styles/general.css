@@ -1,11 +1,13 @@
 @font-face {
     font-family: "PP Supply Mono";
     src: url(fonts/PPSupplyMono-Regular.otf) format('truetype');
+    font-weight: bold;
 }
 
 @font-face {
     font-family: "PP Supply Mono";
     src: url(fonts/PPSupplyMono-Ultralight.otf) format('truetype');
+    font-weight: normal;
 }
 
 @font-face {

@@ -10,6 +10,7 @@
 
 .headline div h2 {
     font-size: 38px;
+    font-weight: 600;
     margin-bottom: 100px;
 }
 
@@ -57,8 +58,7 @@
     margin-top: 5px;
     color: var(--clr-primary-white);
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 30px;
 }
 
