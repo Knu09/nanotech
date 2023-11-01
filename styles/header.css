@@ -1,0 +1,155 @@
+/*
+====================================================
+    NAVIGATION BAR
+=====================================================
+*/
+
+.main-nav {
+    padding: 20px;
+}
+
+.navbar-logo {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-logo-title {
+    margin: 0;
+    padding: 16px 25px;
+    font-family: "PP Supply Mono", serif;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 8px;
+    color: var(--clr-primary-cyan);
+}
+
+.navbar-subpages li {
+
+}
+
+.button-nav {
+}
+
+.navbar-subpages li a {
+    padding: 0;
+    margin: 15px;
+    font-size: 12px;
+    color: var(--clr-primary-white);
+}
+
+.navbar-subpages li a:hover {
+    background-color: transparent;
+}
+
+.bar {
+    display: none;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--clr-primary-white);
+}
+
+.menu-bar {
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .navbar-header .menu-bar {
+        display: block;
+    }
+
+    .navbar-toggle {
+        position: fixed;
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .menu-toggle:checked + .navbar-header .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle:checked + .navbar-header .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle:checked + .navbar-header .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-subpages {
+        position: fixed;
+        right: 5%;
+        top: 70px;
+        opacity: 1;
+        gap: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: rgba(0, 255, 248, .15);
+        box-shadow: 0 8px 32px 0 rgba(2, 148, 248, .2);
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        /*filter: blur(10px);*/
+
+        padding: 20px;
+        width: 320px;
+        height: 450px;
+        transition: 1s;
+    }
+
+    .navbar-subpages li .link-button {
+        font-size: 16px;
+    }
+
+    .secondary-btn {
+        margin: 40px;
+        width: 0;
+        height: 0;
+    }
+
+    .btn-primary {
+        margin: 10px;
+    }
+
+
+    /*.menu-toggle:checked ~ .navbar-subpages {*/
+    /*    opacity: 1;*/
+    /*    right: 5%;*/
+    /*    filter: blur(0);*/
+    /*    visibility: visible;*/
+    /*}*/
+}
+
+/*
+====================================================
+    SUBPAGES NAVIGATION
+=====================================================
+*/
+
+.subpages-nav {
+    margin:0;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+

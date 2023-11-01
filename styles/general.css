@@ -1,0 +1,39 @@
+*,
+::before,
+::after {
+    line-height: calc(1em + 0.5rem);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Supply Light", "JetBrains Mono", serif;
+    background: var(--clr-primary-dark-blue);
+    /*overflow: hidden;*/
+}
+
+#home-page {
+    overflow: hidden;
+}
+
+#project-page {
+    overflow: inherit;
+}
+
+h1, h2, h3, a, p {
+    font-family: "PP Supply Mono", "JetBrains Mono" , serif;
+    color: var(--clr-primary-white);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+img, picture,video,canvas,svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}

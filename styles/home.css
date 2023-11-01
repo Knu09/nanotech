@@ -1,0 +1,119 @@
+/*
+====================================================
+    BANNER
+=====================================================
+*/
+
+.banner {
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.banner .banner-content {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*margin-top: 500px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.banner .banner-content h1{
+    color: #FFF;
+    text-align: center;
+    font-family: "PP Supply Mono", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+
+}
+
+.banner .banner-content h1 span {
+    color: var(--clr-primary-cyan);
+}
+
+.banner .banner-content p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 8px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.main-content {
+    position: relative;
+}
+
+.ellipse {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+
+    border-radius: 759px;
+    background: var(--clr-primary-cyan);
+    filter: blur(400px);
+}
+
+
+/*
+====================================================
+    FLOATING IMAGES
+=====================================================
+*/
+
+.floating-image img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+    left: -30%;
+    animation: fadeInFromTop 1s linear forwards, floating ease 4s infinite;
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    25% {
+        transform: translate(5%, 15%) rotate(360deg);
+    }
+    50% {
+        transform: translate(10%, 5%) rotate(360deg);
+    }
+    75% {
+        transform: translate(0%, 15%) rotate(360deg);
+    }
+    100% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+}
+
+@media (max-width: 1200px) {
+    .floating-image {
+        display: none;
+    }
+}
