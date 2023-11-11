@@ -47,19 +47,20 @@
 
 
 .feature-description h3 {
+    font-family: "Supply Light", serif;
     color: var(--clr-primary-cyan);
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 16px
 }
 
 .feature-description h2 {
     margin-top: 5px;
     color: var(--clr-primary-white);
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 36px;
 }
 
 .feature-description p {
@@ -67,12 +68,46 @@
     color: var(--clr-secondary-ultra-light-grey);
     font-family: "Open Sans", serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 22px;
 }
 
 .feature-button {
     margin: 20px 0 0;
+}
+
+.ellipse1 {
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    width: 250px;
+    height: 250px;
+    filter: blur(200px);
+}
+
+.ellipse2 {
+    position: absolute;
+    top: 30em;
+    bottom: 0;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    filter: blur(250px);
+}
+
+.ellipse3 {
+    position: absolute;
+    right: -40px;
+    bottom: -130em;
+    width: 300px;
+    height: 300px;
+    filter: blur(250px);
+}
+
+@media (max-width: 992px) {
+    .ellipse1, .ellipse2, .ellipse3 {
+        display: none;
+    }
 }
 
 /*
@@ -122,12 +157,29 @@
     .crew-section div .row a .picture2 {
         width: 80px;
         height: 80px;
-        border-radius: 20px;
+        border-radius: 30px;
     }
 
     .crew-section div .row a .picture1 {
         width: 120px;
-        border-radius: 30px;
+        border-radius: 40px;
+    }
+
+    .crew-section div .row a .picture3 {
+        width: 45px;
+        height: 45px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        top: 50px;
+        left: 90px;
+    }
+
+    .crew-section div .row a .picture4 {
+        width: 70px;
+        height: 70px;
+        top: 50px;
+        right: 105px;
+        border-radius: 25px;
     }
 }
 
@@ -152,7 +204,7 @@
 }
 
 .wrapper-content a:hover div p {
-    color: var(--clr-secondary-black);
+    color: rgba(0,0,0,.8);
 }
 
 .wrapper-content a {
@@ -222,8 +274,9 @@
 }
 
 .plan-description button {
-    width: 180px;
+    width: 200px;
     margin: 20px 0 0;
+    padding: 24px 28px;
 }
 
 /*
@@ -234,21 +287,43 @@
 
 .contact-section {
     padding: 60px 10px;
+    font-family: "Supply Light", serif;
 }
 
 .get-in-touch {
     display: flex;
 }
 
+.copyright h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+.copyright span {
+    color: var(--clr-primary-cyan);
+    letter-spacing: 4px;
+}
+
+.social-medias i a{
+    font-size: 20px;
+    color: rgba(255,255,255, .5);
+    text-decoration: none;
+    transition: .3s;
+    margin-right: 10px;
+}
+
+.social-medias i a:hover {
+    color: var(--clr-primary-white);
+}
+
 .elsewhere-col {
     padding-right: 60px;
 }
 
-.title {
+.title h4 {
     color: #00FFF8;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 
@@ -256,12 +331,16 @@
     margin: 20px 0;
 }
 
+.elsewhere-wrapper a {
+    text-decoration: none;
+}
+
 .link {
     color: #DCE1E5;
     font-family: "PP Supply Mono", serif;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 
@@ -272,6 +351,11 @@
 .contact-wrapper3 {
     display: flex;
     justify-content: right;
+}
+
+.contact-wrapper2 a  {
+    font-size: 25px;
+    text-decoration: none;
 }
 
 @media (max-width: 992px) {

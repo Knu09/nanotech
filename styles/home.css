@@ -45,9 +45,10 @@
 }
 
 .banner .banner-content p {
+    font-family: "Supply Light", serif;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 8px;
     line-height: 28px;
     margin-bottom: 40px;
@@ -59,13 +60,14 @@
 }
 
 .ellipse {
-    width: 500px;
-    height: 500px;
+    position: fixed;
+    width: 600px;
+    height: 600px;
     flex-shrink: 0;
 
     border-radius: 759px;
-    background: var(--clr-primary-cyan);
-    filter: blur(400px);
+    background: var(--clr-secondary-blue);
+    filter: blur(250px);
 }
 
 
@@ -79,10 +81,26 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 50px;
-    left: -30%;
     animation: fadeInFromTop 1s linear forwards, floating ease 4s infinite;
 }
+
+.floating-image .floating-image1 {
+    top: 50px;
+    left: -30%;
+}
+
+.floating-image .floating-image2 {
+    top: 100px;
+    right: -20%;
+    animation: fadeInFromTop 2s linear forwards, floating ease 6s infinite;
+}
+
+.floating-image .floating-image3 {
+    top: -180px;
+    right: 20px;
+    animation: fadeInFromTop 2s linear forwards, floating ease 5s infinite;
+}
+
 
 @keyframes fadeInFromTop {
     from {

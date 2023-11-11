@@ -17,10 +17,10 @@
 .navbar-logo-title {
     margin: 0;
     padding: 16px 25px;
-    font-family: "PP Supply Mono", serif;
-    font-weight: 200;
-    font-size: 16px;
-    letter-spacing: 8px;
+    font-family: "Supply Light", serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 6px;
     color: var(--clr-primary-cyan);
 }
 

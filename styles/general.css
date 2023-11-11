@@ -30,11 +30,13 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     font-family: "PP Supply Mono", "JetBrains Mono", serif;
     background: var(--clr-primary-dark-blue);
+
     /*overflow: hidden;*/
 }
 
