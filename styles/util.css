@@ -43,7 +43,7 @@
 }
 
 .link-button {
-    font-family: "Supply Light", serif;
+    font-family: "Supply Light", PP Supply Mono, serif;
     font-size: 12px;
     margin: 20px;
     color: var(--clr-primary-white);

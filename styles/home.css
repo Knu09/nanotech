@@ -45,7 +45,7 @@
 }
 
 .banner .banner-content p {
-    font-family: "Supply Light", serif;
+    font-family: "Supply Light", PP Supply Mono, serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -92,13 +92,13 @@
 .floating-image .floating-image2 {
     top: 100px;
     right: -20%;
-    animation: fadeInFromTop 2s linear forwards, floating ease 6s infinite;
+    animation: fadeInFromTop 1s linear forwards, floating ease 6s infinite;
 }
 
 .floating-image .floating-image3 {
     top: -180px;
     right: 20px;
-    animation: fadeInFromTop 2s linear forwards, floating ease 5s infinite;
+    animation: fadeInFromTop 1s linear forwards, floating ease 5s infinite;
 }
 
 
