@@ -36,7 +36,6 @@ html {
 body {
     font-family: "PP Supply Mono", "JetBrains Mono", serif;
     background: var(--clr-primary-dark-blue);
-
     /*overflow: hidden;*/
 }
 

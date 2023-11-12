@@ -54,6 +54,8 @@
 
 .menu-bar {
     cursor: pointer;
+    padding: 0;
+    margin: 10px 30px;
 }
 
 .menu-toggle {

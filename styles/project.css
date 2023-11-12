@@ -271,6 +271,7 @@
 
 .plan-wrapper:hover {
     background: var(--clr-primary-white);
+    box-shadow: 0 60px 40px rgba(0,0,0,.5);
 }
 
 .plan-description button {
