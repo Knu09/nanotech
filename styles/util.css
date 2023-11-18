@@ -133,20 +133,38 @@
 .navbar-subpages a svg rect {
     stroke: url(#gradient);
     stroke-width: 2.5;
-    stroke-dasharray:  560, 560;
+    stroke-dasharray:  500, 500;
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 0.8s ease-in-out;
+    transition: 1s;
 }
 
 .navbar-subpages a:hover svg rect {
-    stroke-dasharray: 400 , 250;
-    stroke-dashoffset: 1080;
+    stroke-dasharray: 500 , 200;
+    stroke-dashoffset: 500;
 }
 
 .navbar-subpages a svg text {
     stroke-dasharray: 500, 500;
-
 }
+
+.contact-wrapper2 a svg rect {
+    fill: transparent;
+    stroke: url(#gradient2);
+    stroke-width: 2.5;
+    stroke-dasharray:  300, 300;
+    stroke-dashoffset: 0;
+    transition: 1s;
+}
+
+.contact-wrapper2 a svg text {
+    font-size: 18px;
+}
+
+.contact-wrapper2 a:hover svg rect {
+    stroke-dasharray: 100, 50;
+    stroke-dashoffset: 112;
+}
+
 
 
 /*

@@ -345,19 +345,25 @@
     letter-spacing: 2px;
 }
 
-.contact-wrapper2 {
-    padding: 40px 0;
-}
-
 .contact-wrapper3 {
     display: flex;
     justify-content: right;
+}
+
+.contact-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0;
 }
 
 .contact-wrapper2 a  {
     font-size: 25px;
     text-decoration: none;
 }
+
+
 
 @media (max-width: 992px) {
     .contact-wrapper3 {
