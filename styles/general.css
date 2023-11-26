@@ -59,3 +59,15 @@ img, picture,video,canvas,svg {
     max-width: 100%;
     user-select: none;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-primary-dark-blue);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, var(--clr-secondary-blue), var(--clr-primary-cyan));
+
+}
