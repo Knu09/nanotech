@@ -12,6 +12,7 @@ header .main-nav {
     position: fixed;
     padding: 20px;
     margin:0;
+    background: rgba(5,0,65,.20);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255,255,255,.2);

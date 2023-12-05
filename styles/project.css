@@ -39,6 +39,7 @@
 
 .project {
     margin: 90px 0;
+    bottom: 0;
 }
 
 .project .container{
@@ -55,7 +56,7 @@
     line-height: 16px
 }
 
-.feature-description h2 {
+.feature-description .crew-header {
     margin-top: 5px;
     color: var(--clr-primary-white);
     font-size: 28px;
@@ -105,7 +106,7 @@
 }
 
 @media (max-width: 992px) {
-    .ellipse1, .ellipse2, .ellipse3 {
+    .ellipse1, .ellipse2, .ellipse3, .ellipse4, .ellipse5 {
         display: none;
     }
 }
@@ -209,7 +210,9 @@
 
 .wrapper-content a {
     text-decoration: none;
-}.crew-wrapper img {
+}
+
+.crew-wrapper img {
      position: absolute;
      border: 3px solid transparent;
      background: linear-gradient(to left, var(--clr-primary-cyan), var(--clr-secondary-blue)) border-box;
@@ -293,6 +296,11 @@
 
 .get-in-touch {
     display: flex;
+}
+
+.copyright {
+    width: 150px;
+    border-bottom: .015in solid rgba(255,255,255, .25);
 }
 
 .copyright h3{

@@ -71,3 +71,7 @@ img, picture,video,canvas,svg {
     background: linear-gradient(0deg, var(--clr-secondary-blue), var(--clr-primary-cyan));
 
 }
+
+hr {
+    border-color: rgba(255,255,255,.15)
+}

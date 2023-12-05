@@ -4,7 +4,7 @@
 =====================================================
 */
 
-.banner {
+#home {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -28,7 +28,7 @@
     /*align-items: center;*/
 }
 
-.banner .banner-content h1{
+.banner h1{
     color: #FFF;
     text-align: center;
     font-family: "PP Supply Mono", serif;
@@ -40,11 +40,11 @@
 
 }
 
-.banner .banner-content h1 span {
+.banner h1 span {
     color: var(--clr-primary-cyan);
 }
 
-.banner .banner-content p {
+.banner .lower-intro {
     font-family: "Supply Light", PP Supply Mono, serif;
     font-size: 12px;
     font-style: normal;
