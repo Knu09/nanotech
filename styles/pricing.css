@@ -102,15 +102,18 @@
 */
 
 .upper-header {
+    font-weight: 600;
     color: var(--clr-primary-cyan);
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .middle-header {
     color: var(--clr-primary-white);
     font-size: 48px;
     font-weight: 600;
-    line-height: 36px;
+    line-height: 58px;
+    margin-top: 10px;
 }
 
 .middle-header span {
@@ -141,13 +144,14 @@
 }
 
 .booking-feature-list img {
+    margin-top: 10px;
     width: 20px;
     height: 20px;
 }
 
 .booking-feature-list p {
     font-size: 16px;
-    padding-left: 10px;
+    padding-left: 1.8em;
     font-family: "Open Sans", serif;
     color: var(--clr-secondary-ultra-light-grey);
 }

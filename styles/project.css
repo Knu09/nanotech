@@ -37,6 +37,16 @@
 =====================================================
 */
 
+.project-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-section .image-container {
+    padding: 2em 3em;
+}
+
 .project {
     margin: 90px 0;
     bottom: 0;
