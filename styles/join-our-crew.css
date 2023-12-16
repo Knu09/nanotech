@@ -65,7 +65,7 @@
 
     .crew-image-wrapper:hover {
         .crew-image {
-            filter: blur(10px);
+            filter: blur(14px);
         }
 
         .joc-front-detail {
@@ -168,6 +168,9 @@
 
 .crew-image-wrapper img {
     z-index: -1;
+    width: 194px;
+    height: 194px;
+    object-fit: contain;
     border-radius: 55px;
 }
 
@@ -209,6 +212,40 @@
     font-weight: 600;
     font-size: 2.8em;
 }
+
+
+#joc-crew {
+    padding-bottom: 8em;
+}
+
+.consistency {
+    padding-bottom: 8em;
+}
+
+.consistency-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5em;
+    border: 1px solid rgba(255,255,255, .25);
+    border-radius: 50px;
+}
+
+.left-content-consistency h2{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.left-content-consistency h2 span {
+    font-size: 14px;
+}
+
+.joc-stroke-button svg{
+    width: 250px;
+    height: 130px;
+}
+
+
 
 
 

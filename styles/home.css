@@ -64,6 +64,7 @@
     width: 600px;
     height: 600px;
     flex-shrink: 0;
+    z-index: -100;
 
     border-radius: 759px;
     background: var(--clr-secondary-blue);

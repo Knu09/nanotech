@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
     <link rel="icon" href="images/logo_nanotech.png">
     <link rel="icon" href="" type="">
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
@@ -24,14 +29,17 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/project.css">
-    <title>NANOTECH - Project</title>
+    <link rel="stylesheet" href="styles/pricing.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <title>NANOTECH - Contact</title>
 </head>
-<body id="project-page">
+<body>
     <header>
         <nav class="navbar navbar-fixed-top subpages-nav main-nav">
             <div class="container">
                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <div class="navbar-header logo-wrapper">
+                <div class="navbar-header logo-wrapper col-lg-3 col-md-4 col-sm-6">
                     <label for="menu-toggle" class="navbar-toggle collapsed menu-bar" data-toggle="collapse" data-target="#nanoTechNav">
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -50,7 +58,7 @@
                         <li><a href="join-our-crew.html" class="btn link-button nav-link-button">JOIN OUR CREW</a></li>
                         <li><a href="contact.html" class="btn link-button nav-link-button">CONTACT US</a></li>
                         <li class="secondary-btn">
-                            <a href="contact.html" class=" stroke-button">
+                            <a href="#" class=" stroke-button">
                                 <svg>
                                     <rect x="5" y="5" rx="30" ry="35"></rect>
                                     <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" fill="white">LOGIN ></text>
@@ -78,81 +86,69 @@
         </nav>
     </header>
     <main>
-        <section id="project" class="headline">
-            <div class="container">
-                <h2 class="text-center is--bottom-56-tablet is--h5-mobile text-uppercase">
-                    NANOTECH accommodate diverse learners,<br>
-                    <span class="colored-text">fostering programming proficiency</span>
-                </h2>
-            </div>
-        </section>
-        <section  class="project">
-            <div class="container">
-                <div id="features" class="row project-section">
-                    <div class="col-sm-6 feature-description">
-                        <h3 class="text-uppercase">Diverse Programming Languages</h3>
-                        <h2 class="crew-header">Lots of Programming languages prepared for learners</h2>
-                        <p>NANOTECH offer courses on the basics of programming languages, such as HTML, Python, C++, C, Java, and many more.</p>
-                        <a href="pricing.html" class="text-uppercase btn link-button feature-button">Join for free ></a>
-                    </div>
-                    <div class="col-sm-6 text-right image-container">
-                        <img src="images/project-image1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row project-section">
-                    <div class="col-sm-6 feature-description">
-                        <h3 class="text-uppercase">Programming skill Assessment</h3>
-                        <h2 class="crew-header">Over 50+ tutorials and projects waiting to be learned</h2>
-                        <p>The crew has created dynamic tutorials, designed for flexibility and accompanied by hands-on projects to measure your talent.</p>
-                        <a href="pricing.html" class="text-uppercase btn link-button feature-button">Join for free ></a>
-                    </div>
-                    <div class="col-sm-6 text-right image-container">
-                        <img src="images/project-image2.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row project-section">
-                    <div class="col-sm-6 feature-description">
-                        <h3 class="text-uppercase">Free and personalized courses</h3>
-                        <h2 class="crew-header">Explore tailored courses to advance your coding journey.</h2>
-                        <p>We offer basic and advance live courses in  different programming languages  and personalized courses to learn at your own pace that fill in the gaps in your understanding about programming.</p>
-                        <a href="pricing.html" class="text-uppercase btn link-button feature-button">Join for free ></a>
-                    </div>
-                    <div class="col-sm-6 text-right image-container">
-                        <img src="images/project-image3.png" alt="">
+        <section id="contact-header">
+            <div class="container contact-header-section">
+                <div class="row contact-row">
+                    <div class="contact-header-contents col-md-7">
+                        <h3 class="text-uppercase upper-header">Get in Touch</h3>
+                        <h2 class="middle-header">Contact.</h2>
+                        <p class="description">Feel free to Contact us by submitting the form below and we will get back to you as soon as possible</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="get-in-touch" class="crew-section">
-            <div class="container">
-                <div class="row wrapper-content">
-                    <a class="col-xs-6 plan-wrapper wrapper">
-                        <div class="plan-description feature-description">
-                            <h3 class="text-uppercase">Secured career as a programmer</h3>
-                            <h2 class="crew-header">Team built with skill and experience</h2>
-                            <p>Our team has a lot experience on working at industries and companies to help you get better opportunities in finding the right job and industry.</p>
-                            <button href="#" class="btn btn-primary button">GET FREE ACCESS > </button>
+        <section>
+            <div class="container contact-form-section">
+                <div class="row contact-row">
+                    <form>
+                        <div class="row row-1">
+                            <div class="form-group col-sm-6 form-box">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your Name">
+                            </div>
+                            <div class="form-group col-sm-6 form-box">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your Email">
+                            </div>    
                         </div>
-                    </a>
-                    <a class="col-xs-6 crew-wrapper">
-                        <img class="picture1" src="images/christ2.png" alt="">
-                        <img class="picture2 text-center" src="images/brian%20(1).png" alt="Crew Image">
-                        <img class="picture3 text-center" src="images/nhiel-image.png" alt="Crew Image">
-                        <img class="picture4 text-center" src="images/gian.png" alt="Crew Image">
-                        <div class="crew-description feature-description">
-                            <h3>JOIN THE CREW</h3>
-                            <h2 class="crew-header">Be the part of NANOTECH team.</h2>
-                            <p>Are you interested to be part of the crew with an adaptive mindset? </p>
-                            <button href="#" class="btn btn-primary button animated-text" role="button">
-                                <h2><span>JOIN US NOW</span><span>$%K= Q% @#7</span><span>J@I= (* @#$</span><span>$%K= YU &#7</span><span>Jw*P RW L>Y</span></h2>
-                            </button>
+                        <div class="row row-2">
+                            <div class="form-group form-box col-sm-6">
+                                <label for="interest">Your Interest</label>
+                                <select class="form-control" id="interest">
+                                    <option value="webDeveloper">Web Developer</option>
+                                    <option value="softwareEngineer">Software Engineer</option>
+                                    <option value="uiUxDesigner">UI/UX Designer</option>
+                                    <option value="dataAnalysis">Data Analysis</option>
+                                    <option value="mobileDeveloper">Mobile Developer</option>
+                                    <option value="gameDeveloper">Game Developer</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-box col-sm-6">
+                                <label for="course">Course</label>
+                                <select class="form-control " id="course">
+                                    <option value="webDevCourse">Web Development Course</option>
+                                    <option value="softwareEngCourse">Software Engineering Course</option>
+                                    <option value="uiUxCourse">UI/UX Design Course</option>
+                                    <option value="dataAnalysisCourse">Data Analysis Course</option>
+                                    <option value="mobileDevCourse">Mobile Development Course</option>
+                                    <option value="gameDevCourse">Game Development Course</option>
+                                    <option value="fullStackCourse">Full Stack Development Course</option>
+                                    <option value="backendDevCourse">Backend Development Course</option>
+                                    <option value="frontendDevCourse">Frontend Development Course</option>
+                                    <option value="dataScienceCourse">Data Science Course</option>
+                                </select>
+                            </div>
                         </div>
-                    </a>
+                        <div class="form-group form-box">
+                            <label for="message">Message</label>
+                            <textarea placeholder="Enter Your Message" class="form-control" id="message" rows="10"></textarea>
+                        </div>
+                    </form>
+                    <div class="submit-botton-row">
+                        <a href="#" class="btn btn-primary button animated-text" role="button">
+                            <h2><span>SUBMIT</span><span>S#$JF</span><span>EI#)F</span><span>S#$%S</span><span>EF$@W</span></h2>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -178,20 +174,6 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="contact-wrapper2">
-                            <a href="#project" class="stroke-button text-center">
-                                <svg width="55" height="65">
-                                    <rect x="2" y="2" width="50" height="60" rx="25" ></rect>
-                                    <text x="50%" y="55%" text-anchor="middle" alignment-baseline="middle" fill="white"> ^ </text>
-                                    <defs>
-                                        <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:var(--clr-secondary-blue);stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:var(--clr-primary-cyan);stop-opacity:1" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </div>
                     </div>
                     <div class="col-md-4 ccc-1">
                         <div class="contact-wrapper3">
@@ -209,7 +191,7 @@
                                         </div>
                                         <div>
                                             <a target="_blank" href="https://www.figma.com/file/FmHXS4QqtRuGDTnFFEFzbO/NANOTECH---Style-Guide-%7C-Wireframe?type=design&node-id=6664-2&mode=design&t=YtZzj6dbqf78nMcp-0" class="link">Figma</a>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="contact-col">
@@ -220,7 +202,7 @@
                                         <div>
                                             <a href="" class="link">Message</a>
                                         </div>
-                                         <div>
+                                        <div>
                                             <a href="mailto:christiandelatorre1985@gmail.com" class="link">Email</a>
                                         </div>
                                     </div>
@@ -230,10 +212,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ellipse ellipse3"></div>
         </section>
     </footer>
-    <div class="ellipse ellipse1"></div>
-    <div class="ellipse ellipse2"></div>
 </body>
 </html>

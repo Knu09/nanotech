@@ -48,7 +48,7 @@
                         <li><a href="project.html" class="btn link-button nav-link-button">PROJECT</a></li>
                         <li><a href="pricing.html" class="btn link-button nav-link-button">PRICING</a></li>
                         <li><a href="join-our-crew.html" class="btn link-button nav-link-button">JOIN OUR CREW</a></li>
-                        <li><a href="#" class="btn link-button nav-link-button">CONTACT US</a></li>
+                        <li><a href="contact.html" class="btn link-button nav-link-button">CONTACT US</a></li>
                         <li class="secondary-btn">
                             <a href="#" class="stroke-button">
                                 <svg>
@@ -118,4 +118,16 @@
     </main>
 
 </body>
+
+<script>
+    const container = document.querySelector('.container');
+    let scrollLine = document.querySelector('.scroll')
+
+    container.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        container.scrollLeft += e.deltaY;
+        scrollLine.style.width = container.scrollLeft / 2 + 'px';
+    })
+</script>
+
 </html>
