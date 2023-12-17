@@ -135,7 +135,7 @@
     stroke-width: 2.5;
     stroke-dasharray:  500, 500;
     stroke-dashoffset: 0;
-    transition: 1s;
+    transition: stroke-dashoffset ease 0.5s, stroke-dasharray ease 0.5s;
 }
 
 .navbar-subpages a:hover svg rect {
@@ -203,4 +203,73 @@
     100% {
         transform: translateY(-75px);
     }
+}
+
+
+/*
+====================================================
+    STROKE BUTTON
+=====================================================
+*/
+
+.stroke-container {
+    position: relative;
+    height: 100px;
+}
+
+.button-stroke {
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 30%;*/
+    /*transform: translate(-50%, -50%);*/
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    background: transparent;
+    border: none;
+}
+
+.button-stroke svg,
+.button-stroke svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+.button-stroke svg rect {
+    width: 95%;
+    height: 90%;
+}
+
+.hover-wrapper:hover .button-stroke svg text {
+    fill: var(--clr-secondary-black);
+    font-weight: 600;
+}
+
+.button-stroke svg rect {
+    stroke: url(#gradient3);
+    stroke-width: 2px;
+    stroke-dasharray:  220, 0;
+    stroke-dashoffset: 100%;
+    transition: stroke-dashoffset ease 0.5s, stroke-dasharray ease 0.5s;
+}
+
+.button-stroke:hover svg rect {
+    stroke-dasharray: 124 364;
+    stroke-dashoffset: -202;
+}
+
+.button-stroke:hover .text-stroke h2 span {
+    animation: shuffle steps(5) .6s;
+}
+
+.text-stroke {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

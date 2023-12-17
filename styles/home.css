@@ -103,6 +103,16 @@
 }
 
 
+.floating-image .floating-image4 {
+    top: -10em;
+    left: 020px;
+    animation: fadeInFromTop 1s linear forwards, floating ease 6s infinite;
+}
+
+.floating-image .floating-image5 {
+    animation: fadeInFromTop 1s linear forwards, floating ease 7s infinite;
+}
+
 @keyframes fadeInFromTop {
     from {
         opacity: 0;

@@ -64,5 +64,14 @@ form .form-box input:focus {
     padding-bottom: 2em;
 }
 
+.form-box select{
+    cursor: pointer;
+}
+
+
+.contact-form-section {
+    padding-bottom: 5em;
+}
+
 
 
