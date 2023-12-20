@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
     font-family: "PP Supply Mono";
     src: url(fonts/PPSupplyMono-Regular.otf) format('truetype');
@@ -74,83 +73,5 @@ img, picture,video,canvas,svg {
 }
 
 hr {
-    border-color: rgba(255,255,255,.15)
-=======
-@font-face {
-    font-family: "PP Supply Mono";
-    src: url(fonts/PPSupplyMono-Regular.otf) format('truetype');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "PP Supply Mono";
-    src: url(fonts/PPSupplyMono-Ultralight.otf) format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
-    src: url(fonts/Supply-UltraLight.otf),
-    url(fonts/Supply-Light.otf),
-    url(fonts/Supply-Regular.otf),
-    url(fonts/Supply-Medium.otf),
-    url(fonts/Supply-Bold.otf);
-}
-
-
-*,
-::before,
-::after {
-    line-height: calc(1em + 0.5rem);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: "PP Supply Mono", "JetBrains Mono", serif;
-    background: var(--clr-primary-dark-blue);
-    /*overflow: hidden;*/
-}
-
-#home-page {
-    overflow: hidden;
-}
-
-#project-page {
-    overflow: inherit;
-}
-
-h1, h2, h3, a, p {
-    font-family: "PP Supply Mono", "JetBrains Mono" , serif;
-    color: var(--clr-primary-white);
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-
-img, picture,video,canvas,svg {
-    display: block;
-    max-width: 100%;
-    user-select: none;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--clr-primary-dark-blue);
-}
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, var(--clr-secondary-blue), var(--clr-primary-cyan));
-
-}
-
-hr {
-    border-color: rgba(255,255,255,.15)
->>>>>>> e3c20f23706ef572ffd8a0374ad059e56c17bd72
+    border-color: rgba(255, 255, 255, .15);
 }
