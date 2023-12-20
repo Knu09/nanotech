@@ -1,0 +1,252 @@
+
+#join-our-crew-booking {
+    padding-top: 15em;
+}
+
+.booking-features-joc {
+    width: 390px;
+}
+
+@media (max-width: 420px) {
+    .booking-features-joc {
+        width: unset;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .joc-images-header {
+        .upper-header {
+            font-size: 3vw;
+        }
+
+        .joc-header {
+            font-size: 4.6vw;
+        }
+    }
+}
+
+.joc-button-section {
+    padding: 2em 0;
+}
+
+.joc-button-section a {
+    margin:0;
+}
+
+.joc-header {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 3em;
+}
+
+.joc-images-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+    .joc-crew-details .crew-name {
+        opacity: 1;
+        top: unset;
+        bottom: 20px;
+    }
+
+    .joc-crew-details .crew-position {
+        opacity: 1;
+        bottom: -.5em;
+        font-size: 2fr;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .crew-image-wrapper:hover {
+        .crew-image {
+            filter: blur(14px);
+        }
+
+        .joc-front-detail {
+            filter: blur(15px);
+        }
+
+        .crew-position {
+            opacity: 1;
+            bottom: 0;
+        }
+        .crew-name {
+            top: 40px;
+            opacity: 1;
+        }
+
+        .crew-middle-icon {
+            opacity: 1;
+        }
+    }
+}
+
+.crew-image-wrapper {
+    border: 3px solid rgba(255,255,255,.25);
+
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    margin: 2em 1em;
+
+    border-radius: 55px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition: .5s;
+}
+
+
+.crew-image-wrapper .joc-crew-details div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+}
+
+.crew-name {
+    opacity: 0;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.crew-name p {
+    color: var(--clr-primary-cyan);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: PP Supply Mono, serif;
+}
+
+.crew-middle-icon {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.crew-middle-icon i {
+    font-size: 32px;
+    color: var(--clr-primary-cyan);
+}
+
+.joc-crew-details .crew-middle-icon .question-mark{
+    font-family: PP Supply Mono, serif;
+    font-size: 3em;
+    font-weight: 600;
+     color: var(--clr-primary-cyan);
+}
+
+.crew-position {
+    bottom: -2.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.joc-crew-details {
+    z-index: 20;
+}
+
+.joc-crew-details .crew-position h2 {
+    white-space: nowrap;
+    font-family: PP Supply Mono, serif;
+    font-size: 12px;
+    color: var(--clr-secondary-ultra-light-grey);
+}
+
+.crew-image-wrapper:hover {
+    border: 3px solid var(--clr-primary-cyan);
+}
+
+.crew-image-wrapper img {
+    z-index: -1;
+    width: 194px;
+    height: 194px;
+    object-fit: contain;
+    border-radius: 55px;
+}
+
+.crew-image {
+    transition: .25s;
+}
+
+.crew-image-wrapper::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.25);
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 60px;
+    opacity: 0;
+    transition: .25s;
+}
+
+
+.crew-image-wrapper:hover::after {
+    width: 110%;
+    height: 110%;
+    opacity: 1;
+}
+
+.joc-front-detail {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+.joc-you {
+    color: var(--clr-primary-cyan);
+    font-weight: 600;
+    font-size: 2.8em;
+}
+
+
+#joc-crew {
+    padding-bottom: 8em;
+}
+
+.consistency {
+    padding-bottom: 8em;
+}
+
+.consistency-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5em;
+    border: 1px solid rgba(255,255,255, .25);
+    border-radius: 50px;
+}
+
+.left-content-consistency h2{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.left-content-consistency h2 span {
+    font-size: 14px;
+}
+
+.joc-stroke-button svg{
+    width: 250px;
+    height: 130px;
+}
+
+
+
+
+

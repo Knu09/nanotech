@@ -6,7 +6,7 @@
 
     --clr-secondary-black: #000000;
     --clr-secondary-light-grey: #F9FAFC;
-    --clr-secondary-ultra-light-grey: #DCE1E5;
+    --clr-secondary-ultra-light-grey: #bcbecd;
     --clr-secondary-blue: #0294E0;
     --clr-secondary-grey: #979797;
 }
@@ -18,10 +18,8 @@
     margin: 0 20px;
     outline: none;
     border: none;
-
-    font-size: 12px;
+    font-family: "Supply Light", PP Supply Mono, serif;
     font-style: normal;
-    font-weight: 400;
     line-height: 10px;
     letter-spacing: 1px;
     text-decoration: none;
@@ -30,16 +28,27 @@
     background: linear-gradient(270deg, #00FFF8 -4.4%, #0294E0 103.89%);
 }
 
+.button,.link-button span {
+    font-weight: 600;
+}
+
 .button:hover {
     background: linear-gradient(270deg, rgba(0, 255, 248, .75) -4.4%, rgba(2, 148, 224, .75) 103.89%);
 }
 
 
+.button:active {
+    outline: 0;
+    border: 0;
+}
+
 .link-button {
+    font-family: "Supply Light", PP Supply Mono, serif;
     font-size: 12px;
+    margin: 20px;
     color: var(--clr-primary-white);
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     padding-left: 0;
     font-style: normal;
     letter-spacing: 1px;
@@ -47,12 +56,22 @@
     position: relative;
 }
 
-.link-button:hover {
+.btn:hover {
     color: var(--clr-primary-white);
 }
 
-.link-button:active {
+.navbar-subpages .link-button:active {
     color: var(--clr-primary-cyan)
+}
+
+.navbar-subpages .nav-link-button:focus {
+    color: var(--clr-primary-white);
+    background-color: transparent;
+}
+
+.link-button:focus {
+    color: var(--clr-primary-white);
+    background-color: transparent;
 }
 
 .link-button::after {
@@ -72,12 +91,9 @@
 }
 
 .secondary-btn {
-
-}
-
-.secondary-btn {
     width: 180px;
-    height: 50px;
+    height: 52px;
+    background: transparent;
 }
 
 .navbar-subpages .stroke-button {
@@ -89,6 +105,10 @@
     width: 150px;
     height: 60px;
     text-align: center;
+}
+
+.navbar-subpages .stroke-button:focus {
+    background: transparent;
 }
 
 .navbar-subpages a svg{
@@ -113,17 +133,144 @@
 .navbar-subpages a svg rect {
     stroke: url(#gradient);
     stroke-width: 2.5;
-    stroke-dasharray:  560, 560;
+    stroke-dasharray:  500, 500;
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 0.8s ease-in-out;
+    transition: stroke-dashoffset ease 0.5s, stroke-dasharray ease 0.5s;
 }
 
 .navbar-subpages a:hover svg rect {
-    stroke-dasharray: 400 , 250;
-    stroke-dashoffset: 1080;
+    stroke-dasharray: 500 , 200;
+    stroke-dashoffset: 500;
 }
 
 .navbar-subpages a svg text {
     stroke-dasharray: 500, 500;
+}
 
+.contact-wrapper2 a svg rect {
+    fill: transparent;
+    stroke: url(#gradient2);
+    stroke-width: 2.5;
+    stroke-dasharray:  300, 300;
+    stroke-dashoffset: 0;
+    transition: 1s;
+}
+
+.contact-wrapper2 a svg text {
+    font-size: 18px;
+}
+
+.contact-wrapper2 a:hover svg rect {
+    stroke-dasharray: 100, 50;
+    stroke-dashoffset: 112;
+}
+
+
+
+/*
+====================================================
+    ANIMATED TEXT BUTTON
+=====================================================
+*/
+
+.animated-text h2 span{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.animated-text h2 {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    overflow: hidden;
+}
+
+.animated-text:hover h2 span {
+    animation: shuffle steps(5) .6s;
+    transition: 1s;
+}
+
+
+@keyframes shuffle {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-75px);
+    }
+}
+
+
+/*
+====================================================
+    STROKE BUTTON
+=====================================================
+*/
+
+.stroke-container {
+    position: relative;
+    height: 60px;
+}
+
+.button-stroke {
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 30%;*/
+    /*transform: translate(-50%, -50%);*/
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    background: transparent;
+    border: none;
+}
+
+.button-stroke svg,
+.button-stroke svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+.button-stroke svg rect {
+    width: 95%;
+    height: 90%;
+}
+
+.hover-wrapper:hover .button-stroke svg text {
+    fill: var(--clr-secondary-black);
+    font-weight: 600;
+}
+
+.button-stroke svg rect {
+    stroke: url(#gradient3);
+    stroke-width: 2px;
+    stroke-dasharray:  220, 0;
+    stroke-dashoffset: 100%;
+    transition: stroke-dashoffset ease 0.5s, stroke-dasharray ease 0.5s;
+}
+
+.button-stroke:hover svg rect {
+    stroke-dasharray: 124 364;
+    stroke-dashoffset: -202;
+}
+
+.button-stroke:hover .text-stroke h2 span {
+    animation: shuffle steps(5) .6s;
+}
+
+.text-stroke {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

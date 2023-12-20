@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "PP Supply Mono";
+    src: url(fonts/PPSupplyMono-Regular.otf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PP Supply Mono";
+    src: url(fonts/PPSupplyMono-Ultralight.otf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(fonts/Supply-UltraLight.otf),
+    url(fonts/Supply-Light.otf),
+    url(fonts/Supply-Regular.otf),
+    url(fonts/Supply-Medium.otf),
+    url(fonts/Supply-Bold.otf);
+}
+
+
 *,
 ::before,
 ::after {
@@ -9,12 +30,21 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    font-family: "Supply Light", "JetBrains Mono", serif;
+    font-family: "PP Supply Mono", "JetBrains Mono", serif;
     background: var(--clr-primary-dark-blue);
+    /*overflow: hidden;*/
+}
+
+#home-page {
     overflow: hidden;
+}
+
+#project-page {
+    overflow: inherit;
 }
 
 h1, h2, h3, a, p {
@@ -28,4 +58,20 @@ img, picture,video,canvas,svg {
     display: block;
     max-width: 100%;
     user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-primary-dark-blue);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, var(--clr-secondary-blue), var(--clr-primary-cyan));
+
+}
+
+hr {
+    border-color: rgba(255,255,255,.15)
 }

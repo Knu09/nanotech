@@ -1,0 +1,228 @@
+
+
+/*
+====================================================
+    SUBPAGES NAVIGATION
+=====================================================
+*/
+
+
+header .main-nav {
+    z-index: 100;
+    position: fixed;
+    padding: 20px;
+    margin:0;
+    background: rgba(5,0,65,.20);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+/*
+====================================================
+    NAVIGATION BAR
+=====================================================
+*/
+
+.navbar-logo {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-nanotech {
+    width: 45px;
+    height: 40px;
+}
+
+.navbar-logo-title {
+    margin: 0;
+    padding: 16px 25px;
+    font-family: "Supply Light", PP Supply Mono, serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 6px;
+    color: var(--clr-primary-cyan);
+}
+
+
+.navbar-subpages li a {
+    padding: 0;
+    margin: 15px;
+    font-size: 12px;
+    color: var(--clr-primary-white);
+}
+
+.navbar-subpages li a:hover {
+    background-color: transparent;
+}
+
+.bar {
+    display: none;
+    width: 25px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--clr-primary-white);
+}
+
+.bar:nth-child(2) {
+    margin-left: 7px;
+    width: 18px;
+}
+
+/*.bar:nth-child(3) {*/
+/*    margin-left: 14px;*/
+/*    width: 12px;*/
+/*}*/
+
+.menu-bar {
+    cursor: pointer;
+    padding: 0;
+    margin: 10px 30px;
+}
+
+.menu-toggle {
+    display: none;
+}
+@media (max-width: 1200px) {
+    .navbar-nav li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-nav li a {
+        width: fit-content;
+    }
+
+    .navbar-nav li:last-child {
+        padding: 10px 0;
+    }
+
+    .navbar-subpages li .link-button {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        margin: 10px;
+    }
+
+    .secondary-btn {
+        height: 65px;
+        width: unset;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+        max-height: none;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding: 4px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .navbar-header .menu-bar {
+        display: block;
+    }
+
+    .navbar-toggle {
+        position: fixed;
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .menu-toggle:checked + .navbar-header .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle:checked + .navbar-header .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle:checked + .navbar-header .bar:nth-child(3) {
+        width: 25px;
+        margin: 5px auto;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /*#nanoTechNav .navbar-subpages {*/
+    /*    z-index: 101;*/
+    /*    position: fixed;*/
+    /*    right: 5%;*/
+    /*    top: 70px;*/
+    /*    opacity: 1;*/
+    /*    gap: 0;*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    flex-direction: column;*/
+
+    /*    background-color: rgba(0, 255, 248, .15);*/
+    /*    box-shadow: 0 8px 32px 0 rgba(2, 148, 248, .2);*/
+    /*    backdrop-filter: blur( 10px );*/
+    /*    -webkit-backdrop-filter: blur( 10px );*/
+    /*    !*filter: blur(10px);*!*/
+
+    /*    padding: 20px;*/
+    /*    width: 320px;*/
+    /*    height: 450px;*/
+    /*    transition: 1s;*/
+    /*}*/
+
+
+
+
+
+    /*.menu-toggle:checked ~ .navbar-subpages {*/
+    /*    opacity: 1;*/
+    /*    right: 5%;*/
+    /*    filter: blur(0);*/
+    /*    visibility: visible;*/
+    /*}*/
+}
+
+
+
