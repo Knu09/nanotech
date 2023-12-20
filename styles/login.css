@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .register-row {
     margin: auto;
     /*display: flex;*/
@@ -175,3 +176,182 @@
     }
 }
 
+=======
+.register-row {
+    margin: auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    height: 100vh;
+}
+
+.register-wrapper {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    background: #1F2A37;
+    width: 430px;
+    padding: 2em 4em;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: .5s;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section img {
+    width: 75px;
+    height: 60px
+}
+
+.logo-section h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px; /* 135.714% */
+    letter-spacing: 8px;
+}
+
+.register-header {
+    padding: 10px 0 20px;
+}
+
+.register-header *{
+    font-family: "Open Sans", serif;
+    text-align: center;
+}
+
+.register-header h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.register-header p {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.register-form {
+    width: 100%;
+    font-family: "Open Sans", serif;
+    padding-bottom: 20px;
+}
+
+.register-form input {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.25);
+
+    padding: 25px 18px;
+}
+
+.forget-pwd p {
+   color: #0294E0;
+
+    font-family: Open Sans, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.register-section {
+    width: 100%;
+}
+
+.register-section button {
+    margin: 0;
+    padding: 12px 0;
+    font-family: "Open Sans", serif;
+
+    border-radius: 10px;
+    background: #1C64F2;
+}
+
+.register-section p {
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 15px;
+}
+
+.register-section p span a {
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0294E0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.or-text p{
+    font-family: "Open Sans", serif;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.register-wrapper .account-section button{
+    margin-bottom: 1.2em;
+}
+
+.register-section .account-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.25);
+
+}
+
+.account-btn img {
+    width: 30px;
+    margin: 0 20px;
+}
+
+.register-section .account-btn p {
+    padding: 0;
+    margin: 0;
+}
+
+.terms-section {
+    padding: 15px 0 25px;
+}
+
+.terms-section p,
+.terms-section a {
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+}
+
+.terms-section a {
+    color: var(--clr-primary-cyan);
+}
+
+@media (max-width: 600px) {
+    .register-wrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: unset;
+    }
+}
+
+>>>>>>> e3c20f23706ef572ffd8a0374ad059e56c17bd72

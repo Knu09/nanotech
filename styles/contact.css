@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #contact-header {
     padding-top: 10em;
     padding-bottom: 2em;
@@ -75,3 +76,82 @@ form .form-box input:focus {
 
 
 
+=======
+#contact-header {
+    padding-top: 10em;
+    padding-bottom: 2em;
+}
+
+.contact-row {
+    padding: 0 20px;
+}
+
+.contact-header-contents {
+    padding: 0;
+}
+
+#contact-header .description {
+    color: #FFFFFF;
+}
+
+form {
+    font-family: "Open Sans", serif;
+}
+
+form .form-box label {
+    color: var(--clr-secondary-ultra-light-grey);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+form .form-box input{
+    padding: 1.8em 1.6em;
+    background: transparent;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255, 0.25);
+    color: var(--clr-secondary-ultra-light-grey);
+}
+
+form .form-box input:focus {
+    border: 1px solid rgba(0, 255, 248, 0.5);
+}
+
+.form-box select {
+    height: 52.6px;
+    background: var(--clr-primary-dark-blue);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255, 0.25);
+    color: var(--clr-secondary-ultra-light-grey);
+}
+
+#course option:focus {
+    background: rgba(0, 255, 248, 0.05);;
+}
+
+.form-box option:checked {
+}
+
+.form-box textarea {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 14px;
+    color: var(--clr-primary-white);
+    padding: 16px 14px;
+}
+
+#contact .social-medias {
+    padding-bottom: 2em;
+}
+
+.form-box select{
+    cursor: pointer;
+}
+
+
+.contact-form-section {
+    padding-bottom: 5em;
+}
+
+
+
+>>>>>>> e3c20f23706ef572ffd8a0374ad059e56c17bd72

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 ====================================================
     PROJECT HEADLINE
@@ -387,3 +388,396 @@
         display: block;
     }
 }
+=======
+/*
+====================================================
+    PROJECT HEADLINE
+=====================================================
+*/
+
+.headline {
+    padding: 25em 0 0 0;
+}
+
+.headline div h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.headline div h2 span {
+    color: var(--clr-primary-cyan);
+}
+
+@media (max-width: 992px) {
+    .headline .is--bottom-56-tablet {
+        font-size: 26px;
+        margin-bottom: 56px;
+    }
+}
+
+@media (max-width: 425px) {
+    .headline .is--h5-mobile {
+        font-size: 24px;
+    }
+}
+
+/*
+====================================================
+    PROJECT SECTION
+=====================================================
+*/
+
+.project-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-section .image-container {
+    padding: 2em 3em;
+}
+
+.project {
+    margin: 90px 0;
+    bottom: 0;
+}
+
+.project .container{
+    padding: 80px 16px 12px;
+}
+
+
+.feature-description h3 {
+    font-family: "Supply Light", PP Supply Mono, serif;
+    color: var(--clr-primary-cyan);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px
+}
+
+.feature-description .crew-header {
+    margin-top: 5px;
+    color: var(--clr-primary-white);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.feature-description p {
+    margin-top: 30px;
+    color: var(--clr-secondary-ultra-light-grey);
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.feature-button {
+    margin: 20px 0 0;
+}
+
+.ellipse1 {
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    width: 250px;
+    height: 250px;
+    filter: blur(200px);
+}
+
+.ellipse2 {
+    position: absolute;
+    top: 30em;
+    bottom: 0;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    filter: blur(250px);
+}
+
+.ellipse3 {
+    position: absolute;
+    right: -40px;
+    bottom: -130em;
+    width: 300px;
+    height: 300px;
+    filter: blur(250px);
+    z-index: -100;
+}
+
+@media (max-width: 992px) {
+    .ellipse1, .ellipse2, .ellipse3, .ellipse4, .ellipse5 {
+        display: none;
+    }
+}
+
+/*
+====================================================
+    CREW AND PLAN WRAPPER
+=====================================================
+*/
+
+.crew-section .container {
+    padding: 70px 0;
+}
+
+.crew-section div .row a {
+    position: relative;
+    border-radius: 50px;
+    border: 1.5px solid rgba(255, 255, 255, 0.20);
+    width: 450px;
+    height: 560px;
+    /*flex-shrink: 0;*/
+    cursor: pointer;
+}
+
+.wrapper-content {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .wrapper-content {
+        padding: 64px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper-content .crew-wrapper {
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 500px) {
+    .crew-section div .row a {
+        width: 330px;
+        height: 500px;
+    }
+
+    .crew-section div .row a .picture2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 30px;
+    }
+
+    .crew-section div .row a .picture1 {
+        width: 120px;
+        border-radius: 40px;
+    }
+
+    .crew-section div .row a .picture3 {
+        width: 45px;
+        height: 45px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        top: 50px;
+        left: 90px;
+    }
+
+    .crew-section div .row a .picture4 {
+        width: 70px;
+        height: 70px;
+        top: 50px;
+        right: 105px;
+        border-radius: 25px;
+    }
+}
+
+/*
+====================================================
+    CREW WRAPPER
+=====================================================
+*/
+
+.crew-wrapper {
+    margin: 4em 1.5em 0 1.5em;
+    transition: .3s;
+}
+
+.crew-wrapper:hover {
+    background: var(--clr-primary-white);
+}
+
+.wrapper-content a:hover div h2{
+    color: var(--clr-secondary-black);
+    text-decoration: none;
+}
+
+.wrapper-content a:hover div p {
+    color: rgba(0,0,0,.8);
+}
+
+.wrapper-content a {
+    text-decoration: none;
+}
+
+.crew-wrapper img {
+     position: absolute;
+     border: 3px solid transparent;
+     background: linear-gradient(to left, var(--clr-primary-cyan), var(--clr-secondary-blue)) border-box;
+ }
+
+.crew-description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 35px 3.25em 35px;
+}
+
+.crew-description button {
+    margin: 20px 0 0;
+}
+
+.crew-wrapper .picture1 {
+    width: 180px;
+    border-radius: 50px;
+    top: -80px;
+    right: 55px;
+}
+
+.crew-wrapper .picture2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 40px;
+    left: 55px;
+    top:-40px;
+}
+
+.crew-wrapper .picture3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    left: 120px;
+    top: 115px;
+}
+.crew-wrapper .picture4 {
+    width: 110px;
+    height: 110px;
+    border-radius: 35px;
+    right: 125px;
+    top:115px;
+}
+
+/*
+====================================================
+    PLAN WRAPPER
+=====================================================
+*/
+
+.plan-wrapper {
+    margin: 0 1.5em;
+    transition: .3s;
+    padding: 60px 35px;
+}
+
+.plan-wrapper:hover {
+    background: var(--clr-primary-white);
+    box-shadow: 0 60px 40px rgba(0,0,0,.5);
+}
+
+.plan-description button {
+    width: 200px;
+    margin: 20px 0 0;
+    padding: 24px 28px;
+}
+
+/*
+====================================================
+    CONTACT FOOTER
+=====================================================
+*/
+
+.contact-section {
+    padding: 60px 10px;
+    font-family: "Supply Light", PP Supply Mono, serif;
+}
+
+.get-in-touch {
+    display: flex;
+}
+
+.copyright {
+    width: 150px;
+    border-bottom: .015in solid rgba(255,255,255, .25);
+}
+
+.copyright h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+.copyright span {
+    color: var(--clr-primary-cyan);
+    letter-spacing: 4px;
+}
+
+.social-medias i a{
+    font-size: 20px;
+    color: rgba(255,255,255, .5);
+    text-decoration: none;
+    transition: .3s;
+    margin-right: 10px;
+}
+
+.social-medias i a:hover {
+    color: var(--clr-primary-white);
+}
+
+.elsewhere-col {
+    padding-right: 60px;
+}
+
+.title h4 {
+    color: #00FFF8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.elsewhere-wrapper div {
+    margin: 20px 0;
+}
+
+.elsewhere-wrapper a {
+    text-decoration: none;
+}
+
+.link {
+    color: #DCE1E5;
+    font-family: "PP Supply Mono", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contact-wrapper3 {
+    display: flex;
+    justify-content: right;
+}
+
+.contact-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.contact-wrapper2 a  {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 992px) {
+    .contact-wrapper3 {
+        display: block;
+    }
+}
+>>>>>>> e3c20f23706ef572ffd8a0374ad059e56c17bd72
