@@ -20,6 +20,7 @@
         }
 
         .joc-header {
+            padding: 0 10px;
             font-size: 4.6vw;
         }
     }
@@ -51,12 +52,13 @@
     .joc-crew-details .crew-name {
         opacity: 1;
         top: unset;
-        bottom: 20px;
+        bottom: -1em;
     }
 
     .joc-crew-details .crew-position {
         opacity: 1;
-        bottom: -.5em;
+        bottom: unset;
+        top: 20px;
         font-size: 2fr;
     }
 }
@@ -74,10 +76,10 @@
 
         .crew-position {
             opacity: 1;
-            bottom: 0;
+            top: 35px;
         }
         .crew-name {
-            top: 40px;
+            bottom: .2em;
             opacity: 1;
         }
 
@@ -112,7 +114,7 @@
 
 .crew-name {
     opacity: 0;
-    top: 10px;
+    bottom: -2em;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -145,7 +147,7 @@
 }
 
 .crew-position {
-    bottom: -2.5em;
+    top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -222,25 +224,72 @@
     padding-bottom: 8em;
 }
 
-.consistency-contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5em;
+.consistency-wrapper {
+    padding: 2.5em 5em;
     border: 1px solid rgba(255,255,255, .25);
     border-radius: 50px;
 }
 
-.left-content-consistency h2{
+.consistency-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-content-consistency {
+    display: flex;
+}
+
+.consistency-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2em;
+    border-right: 1px solid rgba(255,255,255,.25)
+}
+
+.left-content-consistency div h2{
     font-weight: 600;
     font-size: 32px;
 }
 
-.left-content-consistency h2 span {
+.left-content-consistency div h3 {
     font-size: 14px;
+}
+
+.right-content-consistency {
+    display: flex;
+    justify-content: center;
 }
 
 .joc-stroke-button svg{
     width: 250px;
     height: 130px;
+}
+
+@media (max-width: 768px) {
+    .consistency-wrapper {
+        margin: 0 1.25em;
+    }
+
+    .consistency-contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .consistency-content:last-child {
+        border: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .consistency-content:first-child {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,.25);
+    }
+
+    .left-content-consistency {
+        flex-direction: column;
+    }
 }
