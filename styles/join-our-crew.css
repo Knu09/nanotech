@@ -274,7 +274,7 @@
     bottom: -65em;
     width: 450px;
     height: 450px;
-    filter: blur(230px);
+    filter: blur(240px);
     z-index: -100;
 }
 
