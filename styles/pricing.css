@@ -189,13 +189,13 @@
 
 .booking-header .header-title h1{
     font-weight: 600;
-    font-size: 28px;
+    font-size: clamp(20px, 5vw, 28px);
     color: var(--clr-secondary-black);
 }
 
 header .current-date {
     color: var(--clr-secondary-black);
-    font-size: 2rem;
+    font-size: clamp(.8rem, 4vw, 2rem);
     font-weight: 600;
     margin-top: 16px;
 }
@@ -229,6 +229,7 @@ header .booking-date i {
 }
 
 .calendar .weeks li{
+    font-size: clamp(12px, 4vw, 20px);
     font-weight: 600;
 }
 
@@ -241,6 +242,7 @@ header .booking-date i {
     color: var(--clr-secondary-black);
     cursor: pointer;
     margin-top: 30px;
+    font-size: clamp(14px, 4vw, 20px)
 }
 
 .calendar {
@@ -277,16 +279,6 @@ header .booking-date i {
     background: rgba(0,0,0, .15);
 }
 
-@media (max-width: 480px) {
-    header .current-date {
-        font-size: 3vw;
-    }
-
-    .calendar ul li {
-        font-size: 3vw;
-    }
-}
-
 .ellipse4 {
     position: absolute;
     z-index: -1;
@@ -307,4 +299,14 @@ header .booking-date i {
     width: 260px;
     height: 260px;
     filter: blur(200px);
+}
+
+@media (max-width: 480px) {
+    .booking-calendar {
+        padding: 20px;
+    }
+
+    .calendar {
+        padding: 20px 0;
+    }
 }

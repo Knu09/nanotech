@@ -268,6 +268,16 @@
     height: 130px;
 }
 
+.ellipse6 {
+    position: absolute;
+    right: -200px;
+    bottom: -65em;
+    width: 450px;
+    height: 450px;
+    filter: blur(230px);
+    z-index: -100;
+}
+
 @media (max-width: 768px) {
     .consistency-wrapper {
         margin: 0 1.25em;
@@ -280,6 +290,10 @@
 
     .consistency-content:last-child {
         border: none;
+    }
+
+    .ellipse6 {
+        display: none;
     }
 }
 
