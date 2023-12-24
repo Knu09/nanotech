@@ -27,15 +27,52 @@ const renderCalendar = () => {
     for (let i = 1; i < lastDateofMonth + 1; i++) { // li for all days of current month
         let isToday = i === date.getDate() && currMonth === new Date().getMonth()
                                 && currYear === new Date().getFullYear() ? "active" : "";
-        liTag += `<li class="${isToday}">${i}</li>`;
+
+        liTag += `<li class="${isToday} default">${i}</li>`;
     }
 
     for (let i = lastDayofMonth;i < 6; i++) { // li for next month first days
         liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`;
     }
 
+
+    let previousElement = null;
+
+    function resetPrevious() {
+        if(previousElement){
+            previousElement.classList.remove('selected');
+            previousElement.classList.add('default');
+        }
+    }
+
+    function handleClick(event) {
+        const clickedElement = event.target;
+
+        resetPrevious();
+
+        if (clickedElement === previousElement) {
+            previousElement = null;
+            return;
+        }
+
+        if (clickedElement.classList.contains('inactive')) {
+            return;
+        }
+
+        clickedElement.classList.remove('default');
+        clickedElement.classList.add('selected')
+
+        previousElement = clickedElement;
+    }
+
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
     daysTag.innerHTML = liTag;
+
+    const dayElements = document.querySelectorAll('.days li')
+
+    dayElements.forEach(element => {
+       element.addEventListener('click', handleClick)
+    });
 }
 
 renderCalendar();
@@ -55,3 +92,5 @@ prevNextIcon.forEach(icon => {
         renderCalendar();
     })
 })
+
+

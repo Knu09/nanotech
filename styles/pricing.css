@@ -275,7 +275,7 @@ header .booking-date i {
     transition: .25s;
 }
 
-.days li:hover::before {
+.days li.default:hover::before {
     background: rgba(0,0,0, .15);
 }
 
@@ -283,8 +283,24 @@ header .booking-date i {
     color: #aaa;
 }
 
-.days li.active::before {
+.days li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -.8em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 10px;
+    height: 10px;
     background: var(--clr-primary-cyan);
+}
+
+.days li.selected::before {
+    background: rgba(0,255,248, 0.75);
+}
+
+.days li.default::before {
+    background: transparent;
 }
 
 .ellipse4 {
