@@ -1,6 +1,6 @@
 # NANOTECH Bootcamp Website
 
-A Web Design BootCamp Website that provides a gateway to a world of coding knowledge! NANOTECH provides a comprehensive BootCamp Website for aspiring students, programmers, and seasoned developers who can access different kinds of courses that consist 
+A Website BootCamp that provides a gateway to a world of coding knowledge! NANOTECH provides a comprehensive BootCamp Website for aspiring students, programmers, and seasoned developers who can access different kinds of courses that consist 
 live coding tutorial, video courses, and coding libraries.
 
 ![Screenshot 2023-12-19 133053](https://github.com/Knu09/nanotech/assets/132640979/ab82cabc-3f12-4268-a2ac-f64b7b236d62)
