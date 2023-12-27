@@ -56,6 +56,10 @@ header .main-nav {
     background-color: transparent;
 }
 
+.navbar-subpages li a.active {
+    color: var(--clr-primary-cyan);
+}
+
 .bar {
     display: none;
     width: 25px;
@@ -183,6 +187,20 @@ header .main-nav {
     }
 
     .menu-toggle:checked + .navbar-header .bar:nth-child(3) {
+        width: 25px;
+        margin: 5px auto;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
         width: 25px;
         margin: 5px auto;
         transform: translateY(-8px) rotate(-45deg);

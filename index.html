@@ -24,19 +24,20 @@
     <link rel="stylesheet" href="styles/util.css">
     <link rel="stylesheet" href="styles/header.css">
 
+    <script src="scripts/navbar.js" defer></script>
+
     <title>NANOTECH</title>
 </head>
 <body id="home-page">
     <header>
-        <nav class="navbar navbar-fixed-top main-nav">
+        <nav class="navbar navbar-fixed-top subpages-nav main-nav">
             <div class="container">
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
                 <div class="navbar-header logo-wrapper">
-                    <label for="menu-toggle" class="navbar-toggle collapsed menu-bar" data-toggle="collapse" data-target="#nanoTechNav">
+                    <div class="navbar-toggle collapsed menu-bar" data-toggle="collapse" data-target="#nanoTechNav">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                    </label>
+                    </div>
                     <a class="navbar-brand navbar-logo" href="index.html">
                         <img class="logo-nanotech" src="images/logo_nanotech.png" alt="NanoTech">
                         <h2 class="navbar-brand navbar-logo-title">NANOTECH</h2>
@@ -44,16 +45,15 @@
                 </div>
                 <div class="collapse navbar-collapse" id="nanoTechNav">
                     <ul class="nav navbar-nav navbar-right navbar-subpages">
-                        <li><a href="index.html" class="btn link-button nav-link-button">HOME</a></li>
+                        <li><a href="index.html" class="btn link-button nav-link-button active">HOME</a></li>
                         <li><a href="project.html" class="btn link-button nav-link-button">PROJECT</a></li>
                         <li><a href="pricing.html" class="btn link-button nav-link-button">PRICING</a></li>
                         <li><a href="join-our-crew.html" class="btn link-button nav-link-button">JOIN OUR CREW</a></li>
                         <li><a href="contact.html" class="btn link-button nav-link-button">CONTACT US</a></li>
                         <li class="secondary-btn">
-                            <a href="login.html" class="stroke-button button-stroke">
+                            <a href="login.html" class=" stroke-button button-stroke">
                                 <svg>
                                     <rect x="5" y="5" rx="30" ry="35"></rect>
-<!--                                    <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" fill="white">LOGIN ></text>-->
                                     <defs>
                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                                             <stop offset="0%" style="stop-color:var(--clr-secondary-blue);stop-opacity:1" />
@@ -68,13 +68,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li><button href="#" class="btn btn-primary button button-nav animated-text" role="button">
+                        <li><button href="#" class="btn-primary button button-nav animated-text" role="button">
                             <h2>
                                 <span>JOIN US NOW</span>
                                 <span>$%K= Q% @#7</span>
                                 <span>J@I= (* @#$</span>
-                                <span>$%K= YU &#7</span>
-                                <span>Jw*P RW L>Y</span>
+                                <span>$ION U# N#H</span>
+                                <span>JwIN US N@W</span>
                             </h2>
                         </button></li>
                     </ul>
@@ -82,6 +82,7 @@
             </div>
         </nav>
     </header>
+
     <main>
         <section id="home" class="banner">
             <div class="banner-content container">
